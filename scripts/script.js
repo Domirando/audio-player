@@ -1,3 +1,4 @@
+let container = document.querySelector(".container")
 let previous = document.querySelector('#pre');
 let play = document.querySelector('#play');
 let next = document.querySelector('#next');
@@ -6,7 +7,7 @@ let slider = document.querySelector('#duration_slider');
 let show_duration = document.querySelector('.durationTime');
 let track_image = document.querySelector('.bg_song');
 let artist = document.querySelector('.song-artist');
-
+let slider_position = document.querySelector('.currentTime').innerHTML;
 
 let timer;
 
@@ -21,19 +22,19 @@ let track = document.createElement('audio');
 let All_song = [
     {
         name: "Heathens",
-        path: "music/song2.mp3",
+        path: "../assets/music/song2.mp3",
         img: "../assets/img/img2.jpg",
         singer: "Aurora"
     },
     {
         name: "First Place",
-        path: "music/song3.mp3",
+        path: "../assets/music/song3.mp3",
         img: "../assets/img/img3.jpg",
         singer: "Bulow"
     },
     {
         name: "I dont' think I love you anymore",
-        path: "music/song1.mp3",
+        path: "../assets/music/song1.mp3",
         img: "../assets/img/img1.jpg",
         singer: "Alaine Castillo"
     }
@@ -52,6 +53,7 @@ function load_track(index_no){
     title.innerHTML = All_song[index_no].name;
     track_image.src = All_song[index_no].img;
     artist.innerHTML = All_song[index_no].singer;
+    container.style.backgroundImage = `url(${track_image.src})`;
     track.load();
 
     timer = setInterval(range_slider ,1000);
@@ -67,7 +69,9 @@ function justplay(){
         pausesong();
     }
 }
-
+function reset_slider(){
+    slider.value = 0;
+}
 
 // reset song slider
 function reset_slider(){
@@ -79,6 +83,7 @@ function playsong(){
     track.play();
     Playing_song = true;
     play.src = "../assets/img/pause.png";
+    change_duration()
 }
 
 function pausesong(){
@@ -102,6 +107,11 @@ function next_song(){
     }
 }
 
+function change_duration(){
+    slider_position = track.duration * (slider.value / 100);
+    track.currentTime = slider_position;
+    // slider_position = track.currentTime
+}
 
 // previous song
 function previous_song(){
@@ -116,16 +126,18 @@ function previous_song(){
         playsong();
     }
 }
-
-
-
-function range_slider() {
+function range_slider(){
     let position = 0;
 
     // update slider position
-    if (!isNaN(track.duration)) {
+    if(!isNaN(track.duration)){
         position = track.currentTime * (100 / track.duration);
-        slider.value = position;
+        slider.value =  position;
+    }
+
+
+    if(track.ended){
+        play.src = "../assets/img/play.png";
     }
 }
 
