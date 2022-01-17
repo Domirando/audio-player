@@ -517,7 +517,7 @@ body {
 }
 
 .card {
-  width: 250pt;
+  width: 270pt;
   overflow: hidden;
   border-radius: 10px;
   --tw-bg-opacity: 1;
@@ -533,7 +533,7 @@ body {
 }
 
 .play_icon{
-  max-height: 50px;
+  height: 50px;
 }
 
 .cond_icon{
@@ -566,6 +566,8 @@ body {
   display: flex;
   -moz-column-gap: 15px;
        column-gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .song {

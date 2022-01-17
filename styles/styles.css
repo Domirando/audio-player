@@ -13,14 +13,14 @@ body {
 }
 
 .card{
-    @apply w-[250pt] rounded-[10px] shadow-[0_0_10px_#0000] overflow-hidden bg-slate-500;
+    @apply w-[270pt] rounded-[10px] shadow-[0_0_10px_#0000] overflow-hidden bg-slate-500;
 }
 .icon{
     filter: invert(1);
     @apply cursor-pointer;
 }
 .play_icon{
-    max-height: 50px;
+    height: 50px;
 }
 .cond_icon{
     max-height: 32px;
@@ -37,7 +37,7 @@ body {
     @apply text-[17px] text-white;
 }
 .song_details{
-    @apply flex gap-x-[15px];
+    @apply flex gap-x-[15px] px-[20px];
 }
 .song{
     @apply flex flex-col gap-y-[3px];
