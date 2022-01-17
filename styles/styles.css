@@ -13,7 +13,7 @@ body {
 }
 
 .card{
-    @apply h-[300pt] w-[250pt] rounded-[10px] shadow-[0_0_10px_#0000] overflow-hidden bg-slate-500;
+    @apply w-[250pt] rounded-[10px] shadow-[0_0_10px_#0000] overflow-hidden bg-slate-500;
 }
 .icon{
     filter: invert(1);
@@ -25,4 +25,18 @@ body {
 .cond_icon{
     height: 30px;
     width: 30px;
+}
+
+.about_song{
+    @apply py-[15px]
+    flex justify-center flex-col items-center ;
+}
+.song-artist {
+    @apply text-[20px] text-[rgb(193_255_6)];
+}
+.song-title{
+    @apply text-[17px] text-white;
+}
+.song_details{
+    @apply flex gap-x-[15px];
 }

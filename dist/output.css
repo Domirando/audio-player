@@ -482,7 +482,6 @@ body {
 }
 
 .card {
-  height: 300pt;
   width: 250pt;
   overflow: hidden;
   border-radius: 10px;
@@ -505,4 +504,31 @@ body {
 .cond_icon{
   height: 30px;
   width: 30px;
+}
+
+.about_song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.song-artist {
+  font-size: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(193 255 6 / var(--tw-text-opacity));
+}
+
+.song-title {
+  font-size: 17px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.song_details {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
