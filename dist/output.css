@@ -473,7 +473,7 @@ body {
 }
 
 .container{
-  background: url('../assets/images/lemonade.png') center center no-repeat;
+  background: url('../assets/images/heathens.webp') center center no-repeat;
   background-size: cover;
   display: flex;
   min-height: 100vh;
@@ -494,16 +494,17 @@ body {
 
 .icon{
   filter: invert(1);
+  cursor: pointer;
 }
 
 .play_icon{
-  height: 40px;
-  width: 40px;
+  max-height: 40px;
+  max-width: 40px;
 }
 
 .cond_icon{
-  height: 30px;
-  width: 30px;
+  max-height: 30px;
+  max-width: 30px;
 }
 
 .about_song {
@@ -511,6 +512,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  row-gap: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
