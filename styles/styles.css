@@ -20,12 +20,10 @@ body {
     @apply cursor-pointer;
 }
 .play_icon{
-    max-height: 40px;
-    max-width: 40px;
+    max-height: 50px;
 }
 .cond_icon{
-    max-height: 30px;
-    max-width: 30px;
+    max-height: 32px;
 }
 
 .about_song{
@@ -35,9 +33,15 @@ body {
 .song-artist {
     @apply text-[20px] text-[rgb(193_255_6)];
 }
-.song-title{
+.song-name{
     @apply text-[17px] text-white;
 }
 .song_details{
     @apply flex gap-x-[15px];
+}
+.song{
+    @apply flex flex-col gap-y-[3px];
+}
+.currentTime{
+    float: right;
 }

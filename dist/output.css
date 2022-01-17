@@ -498,13 +498,11 @@ body {
 }
 
 .play_icon{
-  max-height: 40px;
-  max-width: 40px;
+  max-height: 50px;
 }
 
 .cond_icon{
-  max-height: 30px;
-  max-width: 30px;
+  max-height: 32px;
 }
 
 .about_song {
@@ -523,7 +521,7 @@ body {
   color: rgb(193 255 6 / var(--tw-text-opacity));
 }
 
-.song-title {
+.song-name {
   font-size: 17px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -533,4 +531,14 @@ body {
   display: flex;
   -moz-column-gap: 15px;
        column-gap: 15px;
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.currentTime{
+  float: right;
 }
