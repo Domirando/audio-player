@@ -7,7 +7,7 @@ body {
 }
 
 .container{
-    background: url('../assets/lemonade.png') center center no-repeat;
+    background: url('../assets/images/lemonade.png') center center no-repeat;
     background-size: cover;
     @apply min-h-[100vh] flex justify-center items-center;
 }

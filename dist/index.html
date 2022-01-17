@@ -8,17 +8,17 @@
 <body>
     <div class="container">
         <div class="card">
-            <img src="../assets/lemonade.png" class="bg_song" />
+            <img src="../assets/images/lemonade.png" class="bg_song" />
             <div class="about_song">
                 <div class="song_details">
-                    <img class="icon play_icon" src="../assets/play.png">
+                    <img class="icon play_icon" onclick="playAudio()" src="../assets/images/play.png">
                     <div class="song-about">
                         <div class="song-artist">Beyonce</div>
                         <div class="song-title">Don't Hurt Yourself</div>
                     </div>
                     <div class="song">
-                        <img class="icon cond_icon next_icon" src="../assets/backward.png">
-                        <img class="icon cond_icon previous_icon" src="../assets/forward.png">
+                        <img class="icon cond_icon next_icon" src="../assets/images/backward.png">
+                        <img class="icon cond_icon previous_icon" src="../assets/images/forward.png">
                     </div>
                 </div>
                 <input class="block" type="range" min="0" max="233.739656" value="0" id="progress-bar" onchange="changeProgressBar()">
