@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+body {
+    height: 100%;
+}
+
+.container{
+    background: url('../assets/lemonade.png') center center no-repeat;
+    background-size: cover;
+    @apply min-h-[100vh] flex justify-center items-center;
+}
+
+.card{
+    @apply h-[300pt] w-[250pt] rounded-[10px] shadow-[0_0_10px_#0000] overflow-hidden bg-slate-500;
+}
+.icon{
+    filter: invert(1);
+}
+.play_icon{
+    height: 40px;
+    width: 40px;
+}
+.cond_icon{
+    height: 30px;
+    width: 30px;
+}
