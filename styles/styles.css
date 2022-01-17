@@ -7,9 +7,9 @@ body {
 }
 
 .container{
-    background: url('../assets/images/heathens.webp') center center no-repeat;
+    background: url('../assets/img/img2.jpg') center center no-repeat;
     background-size: cover;
-    @apply min-h-[100vh] flex justify-center items-center;
+    @apply min-h-[100vh] flex justify-center min-w-[100vw] items-center;
 }
 
 .card{
