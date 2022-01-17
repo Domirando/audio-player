@@ -1,20 +1,20 @@
-let allSongs = [
+let All_song = [
     {
-        name: 'Heathens',
-        artist: 'Aurora',
-        image: 'heathens',
-        src: 'heathens'
+        name: "Heathens",
+        path: "../assets/music/song2.mp3",
+        img: "../assets/img/img2.jpg",
+        singer: "Aurora"
     },
     {
-        name: 'I don`t think I love you anymore',
-        artist: 'Alaina Castillo',
-        image: 'anymore',
-        src: 'anymore'
+        name: "First Place",
+        path: "../assets/music/song3.mp3",
+        img: "../assets/img/img3.jpg",
+        singer: "Bulow"
     },
     {
-        name: 'First Place',
-        artist: 'bülow',
-        image: 'first place',
-        src: 'first place'
+        name: "I dont' think I love you anymore",
+        path: "../assets/music/song1.mp3",
+        img: "../assets/img/img1.jpg",
+        singer: "Alaine Castillo"
     }
-]
+];
