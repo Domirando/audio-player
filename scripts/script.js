@@ -6,13 +6,9 @@ let slider = document.querySelector('#duration_slider');
 let show_duration = document.querySelector('.durationTime');
 let track_image = document.querySelector('.bg_song');
 let artist = document.querySelector('.song-artist');
-let recent_volume= document.querySelector('#volume');
-let total = document.querySelector('#total');
-
 
 
 let timer;
-let autoplay = 0;
 
 let index_no = 0;
 let Playing_song = false;
@@ -59,14 +55,10 @@ function load_track(index_no){
     track.load();
 
     timer = setInterval(range_slider ,1000);
-    total.innerHTML = All_song.length;
 }
 
 load_track(index_no);
 
-
-
-// checking.. the song is playing or not
 function justplay(){
     if(Playing_song===false){
         playsong();
@@ -86,14 +78,13 @@ function reset_slider(){
 function playsong(){
     track.play();
     Playing_song = true;
-    play.innerHTML = `<img id="play-pause" src="../assets/img/pause.png" onclick="pausesong()" aria-hidden="true" alt="" />`;
+    play.src = "../assets/img/pause.png";
 }
 
-//pause song
 function pausesong(){
     track.pause();
     Playing_song = false;
-    play.innerHTML = `<img class="icon play_icon" onclick="playsong()" id="play" src="../assets/img/play.png">`;
+    play.src = "../assets/img/play.png";
 }
 
 
