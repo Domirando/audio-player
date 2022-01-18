@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64794e4a-c6df-4f72-9a12-cf9bdd2ed572" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="23ognHtFUIBKV2zXs9K8A3EcNFp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -72,7 +70,7 @@
       <workItem from="1642406019840" duration="11723000" />
       <workItem from="1642417943804" duration="6984000" />
       <workItem from="1642434804720" duration="12016000" />
-      <workItem from="1642477284416" duration="8279000" />
+      <workItem from="1642477284416" duration="8967000" />
     </task>
     <servers />
   </component>
