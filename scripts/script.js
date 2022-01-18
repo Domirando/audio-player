@@ -14,20 +14,12 @@ let timer;
 let index_no = 0;
 let Playing_song = false;
 
-//create a audio Element
 let track = document.createElement('audio');
 
-
-
-
-// All functions
-
-
-// function load the track
 function load_track(index_no){
-    clearInterval(timer);
+    // clearInterval(timer);
     reset_slider();
-
+    // index_no = 0;
     track.src = All_song[index_no].path;
     title.innerHTML = All_song[index_no].name;
     track_image.src = All_song[index_no].img;
@@ -38,7 +30,9 @@ function load_track(index_no){
     timer = setInterval(range_slider ,1000);
 }
 
-load_track(index_no);
+window.addEventListener("load", () => {
+    load_track(index_no);
+})
 
 function justplay(){
     if(Playing_song===false){
@@ -47,12 +41,9 @@ function justplay(){
     }else{
         pausesong();
     }
-}
-function reset_slider(){
-    slider.value = 0;
+
 }
 
-// reset song slider
 function reset_slider(){
     slider.value = 0;
 }
@@ -74,8 +65,8 @@ function pausesong(){
 
 // next song
 function next_song(){
-    if(index_no < All_song.length - 1){
-        index_no += 1;
+    if(index_no < All_song.length -1){
+        index_no++;
         load_track(index_no);
         playsong();
     }else{
@@ -89,10 +80,8 @@ function next_song(){
 function change_duration(){
     slider_position = track.duration * (slider.value / 100);
     track.currentTime = slider_position;
-    // slider_position = track.currentTime
 }
 
-// previous song
 function previous_song(){
     if(index_no > 0){
         index_no -= 1;
@@ -107,8 +96,6 @@ function previous_song(){
 }
 function range_slider(){
     let position = 0;
-
-    // update slider position
     if(!isNaN(track.duration)){
         position = track.currentTime * (100 / track.duration);
         slider.value =  position;
