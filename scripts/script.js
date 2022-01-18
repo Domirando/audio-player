@@ -24,7 +24,7 @@ function load_track(index_no){
     title.innerHTML = All_song[index_no].name;
     track_image.src = All_song[index_no].img;
     artist.innerHTML = All_song[index_no].singer;
-    container.style.backgroundImage = `url(${track_image.src})`;
+    // container.style.backgroundImage = `url(${track_image.src})`;
     track.load();
 
     timer = setInterval(range_slider ,1000);
