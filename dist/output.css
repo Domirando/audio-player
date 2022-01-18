@@ -521,8 +521,8 @@ body {
   height: 100%;
   background: url('../assets/img/img2.jpg') center center no-repeat;
   background-size: cover;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
   position: absolute;
   top: 0;
   left: 0;
